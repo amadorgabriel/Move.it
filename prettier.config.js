@@ -8,7 +8,6 @@ module.exports = {
   useTabs: false,
   bracketSpacing: true,
   jsxBracketSameLine: false,
-  arrowParens: 'avoid',
   proseWrap: 'always',
   tabWidth: 2
 }

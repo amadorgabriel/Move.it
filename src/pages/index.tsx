@@ -1,9 +1,13 @@
 import Head from 'next/head'
+import { ExperienceBar } from '../components/ExperienceBar'
+import styles from '../styles/pages/Home.module.css'
 
 export default function Home() {
   return (
     <>
-      <h1>Move.it</h1>
+      <div className={styles.container}>
+        <ExperienceBar />
+      </div>
     </>
   )
 }
