@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
@@ -35,22 +35,68 @@ export default createGlobalStyle`
         font-display: swap;
     }
 
+    //GLOBAL STYLES
     *{
         margin: 0;
         padding: 0;
-        outline: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        --white: #fff;
+        --background: #F2F2F2;
+        --grayLine: #DCDDEO;
+        --Text: #666;
+        --textHighlight: #B3B9FF;
+        --title: #2E38D4;
+        --red: #E83F5B;
+        --green: #4CD62B;
+        --blue: #5965e0;
+        --blueDark: #4953B8;
+        --blueTwitter: #2AA9A0
     }
 
     body{
         width: 100vw;
         height: 100vh;
-        background-color: #5965E0;
+        background-color: var(--blue);
+        color: var(----white);
     }
 
     #__next {
-    width: 100%;
-    min-height: 100vh;
-  }
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    @media(max-width: 1080px){
+        html{
+            font-size: 93.75% //15px
+        }
+    }
+    
+    @media(max-width: 720px){
+        html{
+            font-size: 87.75% //14px
+        }
+    }
+
+    body {
+  background: var(--background);
+  color: var(--text);
+}
+
+body, input, textarea, button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
     h1{
         font-family: 'Inter Semibold', sans-serif;
@@ -62,4 +108,4 @@ export default createGlobalStyle`
         left: 46%;
     }
 
-`;
+`

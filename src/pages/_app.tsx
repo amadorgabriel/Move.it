@@ -1,13 +1,12 @@
-import CreateGlobalStyle from '../styles/global';
+import CreateGlobalStyle from '../styles/global'
 
 function MyApp({ Component, pageProps }) {
-  return(
+  return (
     <>
       <Component {...pageProps} />
       <CreateGlobalStyle />
     </>
-  ) 
+  )
 }
 
 export default MyApp
-                                                                                               
