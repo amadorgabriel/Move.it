@@ -1,7 +1,7 @@
 import { CompletedChallenges } from '../components/CompletedChallenge'
 import { Countdown } from '../components/Countdown'
 import { ExperienceBar } from '../components/ExperienceBar'
-import Profile from '../components/Profile'
+import { Profile } from '../components/Profile'
 import styles from '../styles/pages/Home.module.css'
 import Head from 'next/head'
 

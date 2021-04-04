@@ -1,6 +1,6 @@
 import styles from '../styles/components/Profile.module.css'
 
-function Profile() {
+export function Profile() {
   return (
     <div className={styles.profileContainer}>
       <img
@@ -17,5 +17,3 @@ function Profile() {
     </div>
   )
 }
-
-export default Profile
