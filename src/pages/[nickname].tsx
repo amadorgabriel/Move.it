@@ -16,9 +16,12 @@ interface HomeProps {
   level: number
   completedChallenges: number
   currentExperience: number
+  nickname: string
+  urlImage: string
 }
 
 export default function Home(props: HomeProps) {
+
   return (
     <ChallengesProvider
       level={props.level}
@@ -35,7 +38,7 @@ export default function Home(props: HomeProps) {
         <CountdownProvider>
           <section>
             <div>
-              <Profile />
+              <Profile nickname={props.nickname} urlImage={props.urlImage} />
               <CompletedChallenges />
               <Countdown />
             </div>
@@ -50,13 +53,21 @@ export default function Home(props: HomeProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async ctx => {
-  const { level, currentExperience, completedChallenges } = ctx.req.cookies
+  const {
+    level,
+    currentExperience,
+    completedChallenges,
+    nickname,
+    urlImage
+  } = ctx.req.cookies
 
   return {
     props: {
       level: Number(level),
       currentExperience: Number(currentExperience),
-      completedChallenges: Number(completedChallenges)
+      completedChallenges: Number(completedChallenges),
+      nickname,
+      urlImage
     }
   }
 }

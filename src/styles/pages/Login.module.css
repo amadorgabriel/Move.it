@@ -10,13 +10,12 @@
 
 .container section {
   grid-column: 8 / span 4;
+  margin: 14rem 0;
 
   display: flex;
   flex-direction: column;
   align-items: space-between;
   justify-content: space-around;
-
-  margin: 14rem 0;
 }
 
 .container section > img {
@@ -67,7 +66,16 @@
   transition: 0.4s;
 }
 
-.submitButton {
+.mainContent > button[disabled]{
+  cursor: not-allowed;
+}
+
+.submitButton[disabled] {
+  background-color: var(--blue-dark);
+  cursor: not-allowed;
+}
+
+.submitButton{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,8 +85,9 @@
   cursor: pointer;
   border: none;
   border-radius: 0 5px 5px 0;
-  background-color: var(--blue-dark);
   transition: 0.4s;
+
+  background-color: var(--green);
 }
 
 .mainContent > button:hover,
@@ -87,9 +96,6 @@
   transition: 0.4s;
 }
 
-.filledSubmitButton{
-  background-color: var(--green);
-}
 
 .mainContent > div {
   display: flex;
@@ -111,6 +117,7 @@
 
   cursor: pointer;
   border: none;
+  outline: transparent;
   border-radius: 5px 0 0 5px;
   background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
 }

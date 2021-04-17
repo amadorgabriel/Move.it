@@ -1,0 +1,31 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  background: url('/login_background.png') no-repeat;
+  background-size: cover;
+}
+
+.content{
+  max-width: 500px;
+  text-align: center;
+}
+
+.container h1, .container h2{
+  color: var(--gray-line);
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.content h1{
+  font-weight: 800;
+  font-size: 8rem;
+  font-style: normal;
+  color: var(--white);
+}
