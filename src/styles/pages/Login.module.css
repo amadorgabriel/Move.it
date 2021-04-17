@@ -1,0 +1,126 @@
+.container {
+  background: url('/login_background.png') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container section {
+  grid-column: 8 / span 4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-around;
+
+  margin: 14rem 0;
+}
+
+.container section > img {
+  max-width: 360px;
+  width: 100%;
+}
+
+.mainContent h1 {
+  color: var(--white);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin-bottom: .5rem;
+}
+
+.mainContent > p {
+  color: var(--text-highlight);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 4rem;
+}
+
+.mainContent > button img {
+  width: 40px;
+  margin-right: 1.25rem;
+}
+
+.mainContent > button {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  min-width: 400px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--text-highlight);
+
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--blue-dark);
+  transition: 0.4s;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+  width: 20%;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--blue-dark);
+  transition: 0.4s;
+}
+
+.mainContent > button:hover,
+.submitButton:hover {
+  filter: brightness(0.9);
+  transition: 0.4s;
+}
+
+.filledSubmitButton{
+  background-color: var(--green);
+}
+
+.mainContent > div {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+}
+
+.mainContent > div input {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  width: 80%;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--text-highlight);
+
+  cursor: pointer;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+}
+
+.mainContent > div input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--text-highlight);
+}
+
+
