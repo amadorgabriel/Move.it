@@ -10,7 +10,8 @@
   <a href="#licença">Licença</a>
 </p>
 
----
+
+&nbsp;
 
 
 <p align="center" > 
@@ -26,14 +27,16 @@
 </p>
 
 
----
+&nbsp;
+
 
 <div id="sobre" />
 
 ## :pushpin: Sobre
 🔩 App pomodoro para quem passa muito tempo na frente do computador, criado durante a imersão **#NLW4** da Rockeatseat.
 
----
+&nbsp;
+
 <div id="tecnologias" />
 
 ## :rocket: Tecnologias
@@ -42,15 +45,14 @@
 - :heavy_check_mark: Commiter [**Commitzen**](https://github.com/commitizen/cz-cli);
 - :heavy_check_mark: Cookies [**JsCookies**](https://github.com/js-cookie/js-cookie);
 
+&nbsp;
 
----
 <div id="como-executar" />
 
 ## 📦️ Pré-Requisitos
 Antes de começar você vai precisar ter instalado na sua máquina a ferramenta [Git](https://git-scm.com/downloads). 
 
-
----
+&nbsp;
 
 <div id="clonando" />
 
@@ -60,7 +62,7 @@ Antes de começar você vai precisar ter instalado na sua máquina a ferramenta 
   ❯ git clone https://github.com/amador2014/Photograph-Campaign.git
  ```
 
----
+&nbsp;
 
 <div id="run-web" />
 
@@ -92,15 +94,15 @@ Ou
 <div id="gitpod" />
 
 
----
+&nbsp;
 
 ## Código Fonte
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/amador2014/Move.it/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/amadorgabriel/move.it/)
 
 > **Dica:** Ou então acesse a url https://github1s.com/amador2014/Move.it
 
 
----
+&nbsp;
 
 <div id="licença" />
 
@@ -110,5 +112,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 
 <p align="center" > 
-  :heart: Projeto desenvolvido com :smiley: :heart:
+  Projeto desenvolvido com 💜
 </p>
